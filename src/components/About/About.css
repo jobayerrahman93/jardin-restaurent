@@ -27,6 +27,7 @@
   line-height: 58px;
   letter-spacing: 2px;
   font-weight: 700 !important;
+  word-wrap: break-word;
 }
 
 .about-content .about-description {
@@ -44,4 +45,10 @@
 
 .about-content img {
   border-radius: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .about-content .title {
+    font-size: 48px;
+  }
 }

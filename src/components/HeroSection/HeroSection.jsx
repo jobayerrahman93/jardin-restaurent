@@ -70,9 +70,11 @@ const HeroSection = () => {
 
 
                 <div className="order-area mt-5">
-                    <div className="container">
+                    <div className="container text-center">
                         <img className='img-fluid' src={order} alt="" />
                     </div>
+
+
                 </div>
 
 

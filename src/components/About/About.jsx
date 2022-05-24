@@ -15,10 +15,10 @@ const About = () => {
                 <div className="about-wrapper">
                     <div className="container ">
                         <div className="row">
-                            <div className="col-lg-6 ">
+                            <div className="col-lg-6 col-md-6 ">
                                 <img className='img-fluid' src={promo2} alt="" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6  col-md-6">
                                 <img className='img-fluid' src={promo1} alt="" />
                             </div>
 
@@ -38,13 +38,13 @@ const About = () => {
                                     <h1 className='title'>RESTAURANT GARDEN OF KASHMIR ANGOULEME</h1>
                                     <p className='about-description w-75'>WE AIM TO PRODUCE AT HOME AS MUCH AS POSSIBLE FOR THE BEST QUALITY AND TO REDUCE FOOD MILES. OUR DELICIOUS CAKES, TRADITIONAL DEVON SCONES, BREADS, SOUPS, SAUCES AND SIDE DISHES ARE PRODUCED IN OUR OWN KITCHENS. INDIAN RESTAURANT IN FRANCE, INCLUDE A WONDERFUL RESTAURANT MENU WHERE YOU CAN ENJOY THE BEST INDIAN AND PAKISTANI CUISINE IN THE RESTAURANT AND MUCH MORE. KASHMIR GARDEN IS THE BEST OPTION AROUND YOU. INDIAN AND PAKISTANESE FINE GASTRONOMY</p>
                                 </div>
-                                <div className="col-lg-3">
+                                <div className="col-lg-3  col-md-6 mt-0 mt-md-5">
                                     <div className="img-content">
-                                        <img className='img-fluid' src={about1} alt="" />
-                                        <img className='img-fluid mt-4' src={about2} alt="" />
+                                        <img className='img-fluid mb-4 mt-4 mt-md-0 mt-lg-0' src={about1} alt="" />
+                                        <img className='img-fluid  mb-4' src={about2} alt="" />
                                     </div>
                                 </div>
-                                <div className="col-lg-3">
+                                <div className="col-lg-3  col-md-6">
                                     <div className="img-content">
                                         <img className='img-fluid' src={about3} alt="" />
                                     </div>
