@@ -1,0 +1,47 @@
+.about-wrapper {
+  padding: 95px 0;
+  background: #fd9d3e;
+}
+
+.cmn-btn {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 17px 41px;
+  border-radius: 5px;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: #0d101a;
+  text-transform: uppercase;
+}
+
+.about-content h6 {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+  color: #fff;
+}
+
+.about-content .title {
+  font-size: 70px;
+  color: #1d1d1d;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700 !important;
+}
+
+.about-content .about-description {
+  font-size: 14px;
+  color: #f2f2f2;
+  padding-top: 20px;
+}
+.about-content .img-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.about-content img {
+  border-radius: 10px;
+}
