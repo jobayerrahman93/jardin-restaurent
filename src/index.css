@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --main-color: #fd9d3e;
+}
+
 a {
   text-decoration: none;
 }

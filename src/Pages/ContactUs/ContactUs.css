@@ -1,0 +1,66 @@
+.contactUs-section .contact-content {
+  margin-top: 445px;
+}
+.contactUs-section .contact-subtitle {
+  font-size: 30px;
+  color: #fd9d3e;
+  font-family: "Pacifico", cursive;
+}
+
+.contactUs-section .contact-title {
+  font-size: 70px;
+  color: #1d1d1d;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.contact-form-area .contact-heading {
+  font-size: 35px;
+  color: #121619;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+.contact-form-area .contact-desc {
+  font-size: 14px;
+  color: #999999;
+  padding-bottom: 15px;
+}
+
+.contact-form-area i {
+  color: #fd9d3e;
+  font-size: 28px;
+}
+.contact-form-area .time {
+  color: #fd9d3e;
+}
+
+.contact-form .form-control {
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 1px;
+  padding: 20px 25px;
+  height: 60px;
+  border-radius: 0;
+}
+
+.contact-form .form-control:focus {
+  border: 1px solid #000;
+}
+
+.contact-form input:focus {
+  outline: none !important;
+  box-shadow: unset !important;
+}
+.contact-form .sendBtn {
+  background: #fd9d3e;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid #fd9d3e;
+  width: 100%;
+  padding: 17px 35px;
+}

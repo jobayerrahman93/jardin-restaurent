@@ -1,0 +1,13 @@
+.reservation-section .reservation-content {
+  margin-top: 320px;
+  background: #121619;
+  padding: 40px 0;
+}
+
+.reservation-section .heading-title {
+  font-size: 70px;
+  color: #fff;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}

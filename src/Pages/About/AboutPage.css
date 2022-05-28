@@ -1,0 +1,58 @@
+.aboutUs-section .about-content {
+  margin-top: 445px;
+}
+.aboutUs-section .about-subtitle {
+  font-size: 30px;
+  color: #fd9d3e;
+  font-family: "Pacifico", cursive;
+}
+
+.aboutUs-section .about-content .content-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.aboutUs-section .about-content h1 {
+  font-size: 70px;
+  color: #1d1d1d;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.aboutUs-section .content-box {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover .about-description {
+  color: #000;
+}
+
+.discover .discover-subtitle {
+  font-size: 30px !important;
+  color: #fd9d3e !important;
+  font-family: "Pacifico", cursive;
+}
+.discover .discover-title {
+  font-size: 70px;
+  color: #1d1d1d;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 560px) {
+  .aboutUs-section .about-content h1 {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .aboutUs-section .discover img {
+    width: 100%;
+  }
+}

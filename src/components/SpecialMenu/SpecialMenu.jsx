@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import specialTop from '../../asset/about-bottom.png';
-import menu1 from '../../asset/menu-product-1.png';
 import './SpecialMenu.css';
 
 const SpecialMenu = () => {
+
+    const [specialMenu, setSpecialMenu] = useState([]);
+
+    useEffect(() => {
+        fetch('specialMenu.json')
+            .then(res => res.json())
+            .then(data => setSpecialMenu(data))
+    }, [])
+
     return (
         <>
 
@@ -24,24 +32,26 @@ const SpecialMenu = () => {
 
 
                         <div className="row">
-                            <div className="col-lg-3">
-                                <div className="menu-box mt-5">
-                                    <div className="product-box">
-                                        <div className="img-media">
-                                            <img className='img-fluid' src={menu1} alt="" />
+                            {
+                                specialMenu.map(special => <div className="col-lg-3">
+                                    <div className="menu-box mt-5">
+                                        <div className="product-box">
+                                            <div className="img-media">
+                                                <img className='img-fluid' src={special.productImg} alt="" />
+                                            </div>
+
+                                            <div className="product-description text-center">
+                                                <h6>{special.productName}</h6>
+                                                <div className='hr mb-2'></div>
+                                                <div className="price">&euro;{special.productPrice}</div>
+                                            </div>
                                         </div>
 
-                                        <div className="product-description text-center">
-                                            <h6>Chicken Biryani</h6>
-                                            <div className='hr pb-2'></div>
-                                            <div className="price">&euro;12.50</div>
-                                        </div>
+                                        <a href='' className='cartBtns'>Add to cart <i className="fa-solid fa-cart-shopping"></i></a>
+
                                     </div>
-
-                                    <a href='' className='cartBtns'>Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
-
-                                </div>
-                            </div>
+                                </div>)
+                            }
                         </div>
 
 

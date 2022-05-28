@@ -1,0 +1,67 @@
+.breadcrumb {
+  background: url(../../asset/menu-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  padding: 150px 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.breadcrumb-title {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.breadcrumb ul li a {
+  color: #fff;
+}
+.breadcrumb ul li:last-child {
+  position: relative;
+  padding: 0px 10px;
+  display: inline-block;
+  padding-top: 10px;
+  color: #fff;
+}
+.breadcrumb ul .bread-symbol:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background: #fff;
+  top: 16px;
+  left: 9px;
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+}
+
+.lecarte {
+  background: #1c1c1c;
+  margin-top: 320px;
+  padding: 40px 0;
+}
+
+.lecarte-title {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-style: italic;
+}
+
+.lecarte-media {
+  background: #1e1b1b;
+  cursor: pointer;
+  border: 1px solid #303030;
+  transition: 0.5s;
+}
+
+.lecarte-media:hover {
+  background: #4e4545;
+}

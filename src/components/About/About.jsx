@@ -15,11 +15,11 @@ const About = () => {
                 <div className="about-wrapper">
                     <div className="container ">
                         <div className="row">
-                            <div className="col-lg-6 col-md-6 ">
+                            <div className="col-lg-6 col-md-6 mb-3 mb-md-0 mb-lg-0">
                                 <img className='img-fluid' src={promo2} alt="" />
                             </div>
-                            <div className="col-lg-6  col-md-6">
-                                <img className='img-fluid' src={promo1} alt="" />
+                            <div className="col-lg-6  col-md-6 ">
+                                <img className='img-fluid ' src={promo1} alt="" />
                             </div>
 
                             <div className="btn-area mt-5">

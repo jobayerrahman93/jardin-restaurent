@@ -2,22 +2,34 @@
   background-color: #121619;
   position: relative;
   min-height: 800px;
+  z-index: 9999999;
+  background-image: url(../../asset/chef-bg.png);
 }
 
-.hero-section:before {
+/* .hero-section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../../asset/chef-bg.png);
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.3;
+  z-index: -1;
+} */
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
-.hero-section .nav-link {
+
+.nav-link {
   padding: 15px 18px;
   font-size: 16px;
   padding-left: 18px !important;
@@ -30,12 +42,12 @@
   color: #fff !important;
 }
 
-.hero-section .navbar-nav {
+.navbar-nav {
   display: flex;
   align-items: center;
 }
 
-.hero-section .nav-link:hover {
+.nav-link:hover {
   color: #fd9d3e !important;
 }
 
@@ -68,5 +80,75 @@
 }
 
 .hero-section .order-area {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .nav-link i {
+  font-size: 20px;
+}
+.hero-product .cart-btn {
+  cursor: pointer;
+}
+
+/* pages hover */
+.pages-dropdown {
+  position: relative;
+}
+
+.pages-hover {
+  position: absolute;
+  top: 41px;
+  left: -11px;
+  width: 113px;
+  z-index: 999999;
+  background: #fff;
+  padding: 3px 0px;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.pages-dropdown:hover .pages-hover {
+  visibility: visible;
+  opacity: 1;
+}
+.pages-hover ul li {
+  list-style-type: square;
+}
+
+.pages-hover ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 330px) {
+  .btn-area .cmn-btn {
+    padding: 17px 36px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hero-product {
+    flex-direction: column-reverse;
+  }
+  .hero-product img {
+    width: 200px;
+  }
+  .hero-section .product-name {
+    font-size: 33px;
+    text-align: center;
+    margin-top: 0px !important;
+  }
+  .hero-section {
+    min-height: 692px;
+  }
+  .hero-section .order-area {
+    position: absolute;
+    bottom: 0;
+  }
 }
